@@ -23,8 +23,8 @@ function DayWater:__init(device)
 end
 
 function DayWater:updateValue(data)
-    self:updateProperty("value", data.day_liter_m3) -- write in m3!
-    self:updateProperty("unit", "m3")
+    self:updateProperty("value", data.day_liter_m3 * 1000) -- write in l!
+    self:updateProperty("unit", "l")
     self:updateProperty("log", data.update_timestamp)
 end
 
@@ -158,9 +158,9 @@ function QuickApp:onInit()
                 if #cdevs == 0 then
                     -- Child devices are not created yet, create them...
                     initChildData = {
-                        {name="Verbruik vandaag", className="DayWater", type="com.fibaro.multilevelSensor"},
-                        {name="Verbruik totaal", className="TotalWater", type="com.fibaro.multilevelSensor"},
-                        {name="Actief liter p/m", className="ActiveWater", type="com.fibaro.multilevelSensor"}
+                        {name="Today consumption", className="DayWater", type="com.fibaro.multilevelSensor"},
+                        {name="Total consumption", className="TotalWater", type="com.fibaro.multilevelSensor"},
+                        {name="Active liter p/m", className="ActiveWater", type="com.fibaro.multilevelSensor"}
                     }
 
                     for _,c in ipairs(initChildData) do
