@@ -1,7 +1,5 @@
 # The official repository for the *Wi-Fi Water Meter Quick App* Quick App for Fibaro Home Center 3
 
-> NOTE: THIS QUICK APP IS IN BETA, FULL DOCUMENTATION IS NOT ADDED TO THE RELEASE DOWNLOAD YET!
-
 Integrate your HomeWizard Water Meter into the FIBARO Home Center 3 (Lite).
 
 The Quick App automatically calculates the daily water use value.
@@ -19,11 +17,11 @@ The created devices are set with the *water meter* role in the HC3.
 
 View the included comprehensive manual for detailed installation instructions.
 
-> English and Dutch installation instructions are included!
+> English installation instructions are included!
 
 ### Wi-Fi Water Meter installation
 
-Perform the physical installation of the Wi-Fi Water Meter and and configure the device in the HomeWizard Energy app.
+Perform the [physical installation](https://helpdesk.homewizard.com/en/articles/6336999-how-to-install-the-wi-fi-watermeter) of the Wi-Fi Water Meter and and configure the device in the HomeWizard Energy app.
 
 #### Activate the local API on the Water Meter
 
@@ -36,7 +34,7 @@ To establish **communication** between the **FIBARO Home Center 3** and the **Ho
 
 ### Home Center 3 configuration
 
-- **Download** the Quick App below,
+- **Download** the Quick App from the [releases page](https://github.com/joepv/wi-fi-watermeter-quickapp/releases),
 - **Extract** the ZIP file,
 - **Log on** to the Home Center 3,
 - **Import** the Quick App.
